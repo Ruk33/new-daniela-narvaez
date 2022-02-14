@@ -1,0 +1,294 @@
+body {
+    --bg-highlight: rgb(237, 21, 93);
+    --bg-highlight-secondary: rgb(248, 210, 16);
+    --bg-color: rgb(239, 239, 235);
+
+    --menu-bg-color: white;
+
+    --text-color: rgb(34, 34, 34);
+    --text-highlight: white;
+    --text-highlight-secondary: rgb(34, 34, 34);
+
+    --title-font: 'Bevan', cursive;
+    --text-font: 'Poppins', sans-serif;
+
+    --text-sm: 14px;
+    --text-normal: 16px;
+    --text-big: 18px;
+
+    --title-sm: 16px;
+    --title-normal: 24px;
+    --title-big: 42px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--text-font);
+    font-size: var(--text-normal);
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--title-font);
+    font-weight: normal;
+    margin: 10px;
+    margin-top: 0;
+    font-size: var(--title-big);
+    line-height: var(--title-big);
+}
+
+h2 {
+    font-size: var(--title-normal);
+    line-height: var(--title-normal);
+}
+
+h3 {
+    font-size: var(--title-small);
+    line-height: var(--title-small);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: var(--text-big);
+}
+
+.py-normal {
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.menu-container {
+    background-color: var(--menu-bg-color);
+    padding: 10px;
+}
+
+.menu {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .logo img {
+    height: 32px;
+}
+
+.menu a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.menu .contacto {
+    background-color: var(--bg-highlight);
+    color: var(--text-highlight);
+    display: inline-block;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    background-image: url("/assets/banner.gif");
+    background-repeat: no-repeat;
+    background-position: center -250px;
+    background-size: cover;
+    height: calc(100vh);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 20px;
+    align-items: center;
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 0 black;
+    margin-top: 200px;
+}
+
+.hero h3 {
+    color: var(--bg-highlight);
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.acerca-de-mi {
+    position: relative;
+    background-color: var(--bg-highlight);
+    color: white;
+}
+
+.acerca-de-mi img {
+    width: 200px;
+    position: absolute;
+    border-radius: 100%;
+    top: -30px;
+    left: -90px;
+}
+
+.acerca-de-mi .content {
+    padding: 30px 60px 20px 120px;
+}
+
+.servicios-title {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.servicios div {
+    width: 200px;
+    padding: 20px;
+    padding-top: 0;
+    font-size: var(--text-sm);
+}
+
+.servicios .asesoria,
+.servicios .publicidad {
+    background-color: var(--bg-highlight);
+    color: var(--text-highlight);
+}
+
+.servicios .redes-sociales {
+    background-color: var(--bg-highlight-secondary);
+    color: var(--text-highlight-secondary);
+}
+
+.servicios img {
+    height: 200px;
+}
+
+.testimonio-container {
+    background-image: url("/assets/testimonio-mancha.svg");
+    background-repeat: no-repeat;
+    background-position: center -120px;
+}
+
+.testimonios {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    font-size: var(--text-sm);
+    padding: 40px;
+}
+
+.testimonios .picture {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.testimonios .box {
+    margin-top: -30px;
+    width: 400px;
+}
+
+.testimonios .box .testimonio {
+    background-color: white;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.testimonios .box .testimonio p {
+    text-align: left;
+}
+
+.contacto a {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .menu {
+        display: block;
+        text-align: center;
+    }
+
+    .menu .contacto {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .acerca-de-mi img {
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+    }
+
+    .acerca-de-mi .content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .servicios {
+        display: block;
+    }
+    
+    .servicios div {
+        width: initial;
+        font-size: var(--text-normal);
+    }
+}
+
+@media (max-width: 1300px) {
+    .testimonios {
+        display: block;
+    }
+
+    .testimonios .box {
+        width: initial;
+        margin-bottom: 20px;
+    }
+}

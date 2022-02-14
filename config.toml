@@ -1,0 +1,17 @@
+baseURL = 'https://danielanarvaez.com.ar/'
+languageCode = 'en-us'
+title = 'Daniela Narvaez - Marketing digital'
+theme = 'daniela-narvaez'
+[menu]
+  [[menu.main]]
+    name = "Acerca de mi"
+    url = "/acerca-de-mi/"
+    weight = 1
+  [[menu.main]]
+    name = "Servicios"
+    url = "/servicios/"
+    weight = 2
+  [[menu.main]]
+    name = "Testimonios"
+    url = "/testimonios/"
+    weight = 4
