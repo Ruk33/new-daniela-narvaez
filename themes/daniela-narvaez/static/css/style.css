@@ -270,12 +270,17 @@ h3 {
     gap: 20px;
     row-gap: 40px;
     margin-top: 80px;
+    padding: 20px;
 }
 
 .post-back-link {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.post {
+    padding: 20px;
 }
 
 .post h2 {
