@@ -1,7 +1,7 @@
 ---
 date: "2021-09-30"
 title: "Sueldo del emprendedor"
-summary: "Sueldo del emprendedor, por qué es importante y cómo calcularlo."
+description: "Sueldo del emprendedor, por qué es importante y cómo calcularlo."
 draft: true
 ---
 

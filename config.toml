@@ -2,6 +2,7 @@ baseURL = 'https://danielanarvaez.com.ar/'
 languageCode = 'en-us'
 title = 'Daniela Narvaez - Marketing digital'
 theme = 'daniela-narvaez'
+summaryLength = 20
 [menu]
   [[menu.main]]
     name = "Acerca de mi"

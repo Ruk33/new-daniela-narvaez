@@ -1,7 +1,7 @@
 ---
 date: "2021-12-16"
 title: "Como actualicé mi LinkedIn freelancer en 1 día"
-summary: "La idea es activar Linkedin para busqueda laboral y arrancar lo antes posible a tomar entreivstas."
+description: "La idea es activar Linkedin para busqueda laboral y arrancar lo antes posible a tomar entreivstas."
 draft: false
 ---
 

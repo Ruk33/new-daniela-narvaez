@@ -1,7 +1,7 @@
 ---
 date: "2021-09-29"
 title: "Análisis FODA: paso a paso."
-summary: "Te cuento que es un análisis FODA y cómo hacerlo."
+description: "Te cuento que es un análisis FODA y cómo hacerlo."
 draft: false
 ---
 

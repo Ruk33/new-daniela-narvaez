@@ -1,7 +1,7 @@
 ---
 date: "2021-08-24"
 title: "Canva, mi herramienta de preferencia para diseño y marketing."
-summary: "Te cuento sobre Canva, mi herramienta de preferencia para diseños y logos."
+description: "Te cuento sobre Canva, mi herramienta de preferencia para diseños y logos."
 draft: false
 ---
 
