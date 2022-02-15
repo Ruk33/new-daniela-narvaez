@@ -12,6 +12,7 @@ body {
     --title-font: 'Bevan', cursive;
     --text-font: 'Poppins', sans-serif;
 
+    --text-xs: 12px;
     --text-sm: 14px;
     --text-normal: 16px;
     --text-big: 18px;
@@ -39,8 +40,8 @@ img {
 h1, h2, h3 {
     font-family: var(--title-font);
     font-weight: normal;
-    margin: 10px;
-    margin-top: 0;
+    margin: 0;
+    margin-bottom: 10px;
     font-size: var(--title-big);
     line-height: var(--title-big);
 }
@@ -55,12 +56,24 @@ h3 {
     line-height: var(--title-small);
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
 .text-center {
     text-align: center;
 }
 
+.text-small {
+    font-size: var(--text-sm);
+}
+
 .text-big {
     font-size: var(--text-big);
+}
+
+.text-highlight {
+    color: var(--bg-highlight);
 }
 
 .py-normal {
@@ -129,6 +142,7 @@ h3 {
     background-color: white;
     box-shadow: 10px 10px 0 black;
     margin-top: 200px;
+    border: 1px solid black;
 }
 
 .hero h3 {
@@ -239,6 +253,40 @@ h3 {
     padding: 10px;
 }
 
+.post-container {
+    background-image: url("/assets/mancha-azul.svg");
+    background-repeat: no-repeat;
+    background-position: -50px -100px;
+}
+
+.post-title {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+    row-gap: 40px;
+    margin-top: 80px;
+}
+
+.post-back-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    margin-top: 30px;
+}
+
+thead tr th {
+    text-transform: uppercase;
+    font-size: var(--text-xs);
+}
+
 @media (max-width: 800px) {
     .menu {
         display: block;
@@ -290,5 +338,11 @@ h3 {
     .testimonios .box {
         width: initial;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .posts {
+        grid-template-columns: 100%;
     }
 }

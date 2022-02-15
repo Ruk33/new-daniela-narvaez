@@ -1,0 +1,12 @@
+START DEVELOPMENT
+    hugo server -D
+
+    -D flag will also include drafts files.
+    The server will start in http://localhost:1313
+
+CREATE NEW PAGE
+    hugo new <path.md>
+    hugo new blog/full-uri.md
+
+    Do not forget the file extension or it will
+    throw an error.

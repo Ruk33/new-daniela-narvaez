@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="py-normal post-container">
+    <div class="text-center text-highlight text-big">Últimos posts</div>
+    <h1 class="post-title text-uppercase text-center">Amigate con la estrategia</h1>
+    <div class="container">
+        <div class="posts">
+            {{ range .Pages.ByPublishDate.Reverse }}
+            {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+            {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+            <div>
+                <time datetime="{{ $dateTime }}" class="text-small">
+                    {{ .PublishDate.Format $dateFormat }}
+                </time>
+                <h2>{{ .Title }}</h2>
+                <p>{{ .Summary }}</p>
+                <a class="text-highlight" href="{{ .RelPermalink }}">
+                    Leer mas
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
